@@ -5,7 +5,7 @@ FROM tomcat:9-jdk11
 RUN rm -rf /usr/local/tomcat/webapps/*
 
 # Copy your WAR file into the Tomcat webapps directory
-COPY vms-webservice.war /usr/local/tomcat/webapps/ROOT.war
+COPY VMS_WEB_V01.war /usr/local/tomcat/webapps/ROOT.war
 
 # Expose default Tomcat port
 EXPOSE 8080
